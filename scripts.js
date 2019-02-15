@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
 
     function checkTimeValue() {
-        if (isNaN(input.value) || input.value == '' ) {
-            alert ('Please enter just a number');
+        if (isNaN(input.value) || input.value == '' || input.value < 0 ) {
+            alert ('Please enter just a positive number');
         } else {
             console.log('game is starting');
             pickRandomElement();
